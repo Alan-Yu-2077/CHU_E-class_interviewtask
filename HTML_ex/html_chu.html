@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=7" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>机构列表页</title>
+
+<link type="text/css" href="/_css/_system/system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/1/1.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/02/2/style/2/2.css" rel="stylesheet"/>
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+<link type="text/css" href="/_web/_platform/teacherHome/css/tecWebQuery.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="2"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<script type="text/javascript" src="/_web/_platform/teacherHome/teaInfoMain/js/teaWebQuery.js"></script>
+<script type="text/javascript" src="/_web/_platform/teacherHome/teaInfoMain/js/tecSearch.js"></script>
+<script type="text/javascript" src="/_js/json/json2.js"></script>
+<link rel="stylesheet" href="/_upload/tpl/00/01/1/template1/t_style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/_upload/tpl/00/01/1/template1/extends/extends.js"></script>
+</head>
+
+<body>
+<div class="wrapper" id="header">
+  <div class="inner" frag="面板10">
+    <div class="head" frag="窗口10" portletmode="simpleSudyNavi" configs="{'c1':'1','c7':'2','c4':'_self','c3':'6','c6':'0','c8':'2','c9':'0','c2':'1','c5':'0'}" contents="{'c2':'0'}">
+      <div id="wp_nav_w10"> 
+
+ 
+<ul class="wp_nav" data-nav-config="{drop_v: 'down', drop_w: 'right', dir: 'y', opacity_main: '-1', opacity_sub: '-1', dWidth: '0'}">
+      
+     <li class="nav-item i1 "> 
+         <a href="http://js.chd.edu.cn/main.htm" title="首页" target="_self"><span class="item-name">首页</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i2 "> 
+         <a href="http://page.chd.edu.cn/_web/_platform/teacherHome/web/login.jsp" title="登录" target="_blank"><span class="item-name">登录</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i3 "> 
+         <a href="/7/list.htm" title="通知" target="_self"><span class="item-name">通知</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i4 "> 
+         <a href="/8/list.htm" title="帮助" target="_self"><span class="item-name">帮助</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i5 "> 
+         <a href="/wtfk/list.htm" title="问题反馈" target="_self"><span class="item-name">问题反馈</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+</ul> 
+ 
+ 
+ </div>
+    </div>
+    <div class="aa"><a href="http://js.chd.edu.cn/main.htm"></a></div>
+  </div>
+  <div class="inner1" frag="面板11">
+    <div frag="窗口11" portletmode="researchTec" class="t-p-search">
+      <div class="tp-tab">
+<ul class="tab-menu">
+</ul>
+<div class="tp-search clearfix">
+<div class="search-input">
+<input class="search-title" id="keyword" name="keyword" type="text" value="" placeholder="输入关键字">
+</div>
+<div class="search-btn">
+<input class="search-submit" name="submit" type="submit" value="搜索" onclick="getSearchshowData('/_wp3services/generalQuery?queryObj=teacherHome&t=0.12762046350427336',0,2,1);">
+</div>
+ <input type="hidden" id="searchType" name="searchType" value="">
+</div>
+</div>
+<script> 
+$(function() {
+getSearchType("0,1,2",".tab-menu",1);
+setSudyTab(".tp-tab");
+var html = "<div id='search_pages'></div>\r\n";
+    $("#searchTea").after(html);
+getRequestData("/_wp3services/generalQuery?queryObj=teacherHome&t=0.12762046350427336",0,1);
+ });
+</script> 
+
+    </div>
+  </div>
+</div>
+<div class="wrapper" >
+  <div class="inner" >
+       	<div class="col_news_head1" frag="面板555">
+      	<ul class="col_metas clearfix" frag="窗口555" portletmode="simpleColumnAttri">
+         
+          <li class="col_path"><span class="path_name">当前位置：</span><a href="/main.htm" target="_self">首页</a><span class='possplit'>&nbsp;&nbsp;</span><a href="/14/list.htm" target="_self">机构列表页</a></li>
+         
+        </ul>
+      </div>
+  </div>
+</div>
+<div class="wrapper" id="bottom_frame">
+  <div class="inner">
+    <div class="post post-20">
+      <div class="tt">
+        <h3 class="tit">老师姓名</h3>
+      </div>
+      <div class="con">
+        <ul class="tp_link_list clearfix" id="searchTea">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper" id="footer">
+  <div class="footer-inner">
+    <div class="inner clearfix">
+      <div class="foot_l">
+        <p>校党委宣传部制作©  陕ICP备05001904号-1</p>
+        <p>陕公网安备 61011302000162号</p>
+      </div>
+      <div class="foot_r">
+        <p>学校地址：中国  西安市南二环路中段  邮编:710064</p>
+        <p>电话:+86-029-82338114</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+  $(".sudy-tab").sudyTab({
+      handle:".tab-menu>li",    // 控制器元素，默认为.tab-menu li
+      content:".tab-list>li",   // 内容体，可以有多个并以英文逗号隔开，如.tab-list li,.tab-more li,默认值为".tab-list li,.tab-more li"
+      trigger:"mouseenter",   // 触发事件，默认为"mouseenter"鼠标经过
+      start:1,          // 开始项，默认为第一个
+      autoPlay:{
+        active:false,      // 是否激活自动切换
+        interval:5000,    // 自动切换时间间隔
+        pauseHover:true   // 是否鼠标放上面时停止自动
+      }
+  });
+});
+</script>
+</body>
+</html>
+ <img src="/_visitcount?siteId=2&type=2&columnId=14" style="display:none" width="0" height="0"></image>
