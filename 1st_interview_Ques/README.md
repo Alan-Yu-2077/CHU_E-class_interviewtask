@@ -1,65 +1,92 @@
-# 🚀 教师信息爬取系统
+# 🚀 WeChat Article Scraping System
 
-本项目基于 **Selenium + BeautifulSoup** 实现，能够自动爬取输入的公众号文章的url内的标题与内容
-## 📌 **功能**
-✅ 对输入的公众号Url进行内容爬取
+This project is based on **Selenium + BeautifulSoup**, enabling automatic crawling of the title and content from the provided WeChat article URLs.
 
+## 📌 **Features**
+✅ Crawl the content from the input WeChat article URLs
 
-# 环境配置 **Windows 和 macOS 通用
-📌 ChromeDriver 配置完整指南
+# Environment Setup (Compatible with Windows & macOS)
 
-由于 ChromeDriver 版本与 Google Chrome 浏览器 需要匹配，且不同操作系统（Windows/macOS/Linux）的安装方式不同，我们需要详细讲解 如何安装、配置和在代码中修改 ChromeDriver 路径。
+📌 **ChromeDriver Configuration Guide**
 
-📌 什么是 ChromeDriver？
-	•	ChromeDriver 是 Selenium 控制 Google Chrome 所需的驱动程序。
-	•	你必须确保 ChromeDriver 版本 和 Google Chrome 版本 一致，否则可能会报错 SessionNotCreatedException。
+Since ChromeDriver must match the Google Chrome version and installation methods differ across operating systems (Windows/macOS/Linux), this guide explains how to install, configure, and modify the ChromeDriver path in the code.
 
-📌 Windows & macOS 的安装方法
+📌 **What is ChromeDriver?**
+- ChromeDriver is required for Selenium to control Google Chrome.
+- The ChromeDriver version **must match** the Google Chrome version; otherwise, errors like `SessionNotCreatedException` may occur.
 
-1️⃣ 检查 Chrome 版本
-在安装 ChromeDriver 之前，先检查你的 Google Chrome 版本：
-	•	Windows：
-        在 Chrome 地址栏输入： chrome://version/
-        你会看到类似：
-        Google Chrome 版本 123.0.6312.86
-	•	macOS：
-        /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+📌 **Installation Guide for Windows & macOS**
 
-2️⃣ 下载 ChromeDriver
+1️⃣ **Check Chrome Version**  
+Before installing ChromeDriver, check your Google Chrome version:  
+- **Windows:**  
+  Enter `chrome://version/` in the Chrome address bar.  
+  Example output: `Google Chrome 123.0.6312.86`  
+- **macOS:**  
+  Run in Terminal:  
+  ```sh
+  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+  ```
 
-//windows：
-    直接使用 webdriver-manager 自动安装适配版本：pip install webdriver-manager
-//mac：
-    在终端使用 brew install chromedriver
+2️⃣ **Download ChromeDriver**  
+- **Windows:** Use `webdriver-manager` for automatic installation:  
+  ```sh
+  pip install webdriver-manager
+  ```  
+- **macOS:** Install via Homebrew:  
+  ```sh
+  brew install chromedriver
+  ```
 
-查找自己的chromdriver路径，后续修改代码：
-//windows：
-    where chromedriver
-//mac：
-    which chromedriver
+3️⃣ **Find ChromeDriver Path**  
+- **Windows:**  
+  ```sh
+  where chromedriver
+  ```  
+- **macOS:**  
+  ```sh
+  which chromedriver
+  ```  
 
-# 运行程序需要下载的python工具包：
-  pip install selenium beautifulsoup4 requests pandas webdriver-manager
-  依赖包	        作用
-selenium	       控制浏览器，用于自动化爬取网页数据
-beautifulsoup4	   解析 HTML 结构，提取网页中的信息
-requests	       发送 HTTP 请求，如果部分页面可以用 requests 直接访问
-pandas	           处理 CSV 数据，存储和管理爬取的数据
-webdriver-manager  自动下载和管理 ChromeDriver，避免手动安装
+# Required Python Packages  
 
-# 🚀 如何运行
- 在url-list变量中添加自己想爬取的公众号url
- python get_article.py (或者直接在编译平台运行该文件)
+```sh
+pip install selenium beautifulsoup4 requests pandas webdriver-manager
+```
 
-# 💰 你将获得
-以你提供的公众号url对应的公众号文章标题命名的txt文件，文件内包含该文章的文本内容
-文件将直接储存于该文件夹分支内
+| Dependency        | Purpose                                      |  
+|------------------|---------------------------------------------|  
+| selenium         | Automates browser interactions for web scraping |  
+| beautifulsoup4   | Parses HTML structure to extract information |  
+| requests         | Sends HTTP requests (for pages accessible via requests) |  
+| pandas          | Handles CSV data storage and management |  
+| webdriver-manager | Manages ChromeDriver installation automatically |  
 
+---
 
-# 📌贡献 & 开源
+# 🚀 How to Run  
 
-💡 欢迎参与贡献！
-	•	如果发现问题，请提交 Issue
-	•	你可以 Fork 项目并提交 PR
+1️⃣ **Add the WeChat article URLs**  
+   - Modify the `url-list` variable to include the WeChat article URLs you want to scrape.  
 
-📜 License: MIT
+2️⃣ **Run the script**  
+   ```sh
+   python get_article.py
+   ```  
+   (or run it directly in your preferred code editor)
+
+---
+
+# 💰 Output
+Each scraped article will be saved as a `.txt` file, named after the corresponding article title. The file will contain the full article text and be stored in the same directory.
+
+---
+
+# 📌 Contribution & Open Source  
+
+💡 **Contributions Welcome!**  
+   - Found a bug? Submit an **Issue**  
+   - Want to improve the project? **Fork & submit a PR**  
+
+📜 **License:** MIT.
+

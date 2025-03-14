@@ -63,8 +63,8 @@ for url in teacher_urls:
 
     # 提取信息
     def get_text(selector):
-        element = soup.select_one(selector)
-        return element.text.strip() if element else "无"
+        elements = soup.select(selector)
+        return "\n".join([e.text.strip() for e in elements]) if elements else "无"
 
     # 基本信息
     name = get_text(".news_title")
