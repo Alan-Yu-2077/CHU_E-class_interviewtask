@@ -5,6 +5,7 @@ This project is based on **Selenium + BeautifulSoup**, enabling automatic crawli
 ## 💰 Updates
 - **March 12, 2025, 12:10** >>> Added the HTML code of the main webpage of Chang'an University, the HTML code of the Faculty of Highway Teachers Information Database, and the HTML code of an individual teacher's homepage for users to analyze the website structure.
 - **March 13, 2025, 9:09** >>> Modified the crawling logic function in `get_detail.py`, changing `soup_select_one` in the `get_text` function to `soup_select` to obtain all information under the entry.
+- **March 14, 2025, 10:44** >>>Now available: Automatic breakpoint resumption, just run again to automatically read the last breakpoint and restart the crawl. Optimization: Change the append mode to create and initialize the column name when the output file does not exist
 
 ## 📌 **Features**
 ✅ **Automatically retrieve faculty homepage URLs** (crawled from the main website)  
